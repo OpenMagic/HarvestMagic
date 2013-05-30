@@ -9,6 +9,7 @@ namespace HarvestMagic
         public Harvest(HarvestAccount account)
         {
             this.account = account.Validate();
+            this.account.Freeze();
         }
     }
 }

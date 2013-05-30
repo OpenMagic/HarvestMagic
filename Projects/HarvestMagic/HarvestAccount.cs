@@ -21,6 +21,13 @@ namespace HarvestMagic
         [Required]
         public string Password { get; set; }
 
+        public HarvestAccount()
+        {
+            Uri = "";
+            UserName = "";
+            Password = "";
+        }
+
         public void Freeze()
         {
             isFrozen = true;
