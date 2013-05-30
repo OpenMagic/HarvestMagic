@@ -2,7 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
-namespace CommonMagic.Tests
+namespace CommonMagic.Reflection.Tests
 {
     public class TypeTests
     {

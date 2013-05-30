@@ -1,8 +1,8 @@
-﻿using CommonMagic;
-using CommonMagic.DataAnnotations;
+﻿using CommonMagic.DataAnnotations;
 using CommonMagic.Reflection;
 using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Reflection;
 
 namespace HarvestMagic.Tests
 {
@@ -92,6 +92,41 @@ namespace HarvestMagic.Tests
                     .Property(x => x.UserName)
                     .IsRequired()
                     .Should().BeTrue();
+            }
+        }
+
+        [TestClass]
+        public class Freeze
+        {
+            [TestMethod]
+            public void ChangesAllPublicPropertiesToFrozen()
+            {
+                // Given
+                var account = new HarvestAccount();
+
+                // When
+                account.Freeze();
+
+                // Then
+                IsFrozen(account, account.Property(x => x.Password), "fake password").Should().BeTrue();
+                IsFrozen(account, account.Property(x => x.Uri), "http://fakeuri.com").Should().BeTrue();
+                IsFrozen(account, account.Property(x => x.UserName), "fake user name").Should().BeTrue();
+            }
+
+            private bool IsFrozen(object obj, PropertyInfo propertyInfo, string value)
+            {
+                try
+                {
+                    propertyInfo.SetValue(obj, value, null);
+                }
+                catch (TargetInvocationException ex)
+                {
+                    if (ex.InnerException.Message == "Attempted to modify a frozen instance")
+                    {
+                        return true;
+                    }
+                }
+                return false;
             }
         }
     }

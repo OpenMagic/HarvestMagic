@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="HarvestAccount.cs" />
     <Compile Include="Harvest.cs" />
+    <Compile Include="IFreezable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

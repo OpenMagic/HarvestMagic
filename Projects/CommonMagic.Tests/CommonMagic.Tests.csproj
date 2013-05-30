@@ -63,8 +63,9 @@
     <Compile Include="DataAnnotations\ValidationTests.cs" />
     <Compile Include="DataAnnotations\UriAttributeTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reflection\ObjectExtensionsTests.cs" />
     <Compile Include="Reflection\PropertyInfoExtensionsTests.cs" />
-    <Compile Include="TypeTests.cs" />
+    <Compile Include="Reflection\TypeTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CommonMagic\CommonMagic.csproj">

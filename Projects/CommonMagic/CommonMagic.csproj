@@ -52,8 +52,9 @@
     <Compile Include="DataAnnotations\UriAttribute.cs" />
     <Compile Include="DataAnnotations\Validation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reflection\ObjectExtensions.cs" />
     <Compile Include="Reflection\PropertyInfoExtensions.cs" />
-    <Compile Include="Type.cs" />
+    <Compile Include="Reflection\Type.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Fody.targets" />

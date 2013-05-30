@@ -2,7 +2,7 @@
 using System.Linq.Expressions;
 using System.Reflection;
 
-namespace CommonMagic
+namespace CommonMagic.Reflection
 {
     public static class Type<T>
     {
