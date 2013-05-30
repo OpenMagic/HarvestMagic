@@ -60,6 +60,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="DataAnnotations\ValidationTests.cs" />
     <Compile Include="DataAnnotations\UriAttributeTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reflection\PropertyInfoExtensionsTests.cs" />
