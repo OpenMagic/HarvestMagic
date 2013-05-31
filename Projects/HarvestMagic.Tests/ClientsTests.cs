@@ -10,51 +10,43 @@ namespace HarvestMagic.Tests
     [TestClass]
     public class ClientsTests : BaseHarvestTests<Clients>
     {
-        [TestClass]
-        public class GetAll : BaseClientsTests
+        [TestMethod]
+        public void GetAll_ShouldBeListOfAllClients()
         {
-            [TestMethod]
-            public void ShouldBeListOfAllClients()
+            // Given
+            var account = Config.Instance.HarvestAccount;
+
+            // When
+            var result = account.Clients.GetAll();
+
+            // Then
+            result.Count().Should().BeGreaterThan(0);
+            ClientsShouldHaveData(result);
+        }
+        
+        protected void ClientsShouldHaveData(IEnumerable<Client> clients)
+        {
+            foreach (var client in clients)
             {
-                // Given
-                var account = Config.Instance.HarvestAccount;
-
-                // When
-                var result = account.Clients.GetAll();
-
-                // Then
-                result.Count().Should().BeGreaterThan(0);
-                ClientsShouldHaveData(result);
+                ClientShouldHaveData(client);
             }
         }
 
-        [TestClass]
-        public abstract class BaseClientsTests
+        private void ClientShouldHaveData(Client client)
         {
-            protected void ClientsShouldHaveData(IEnumerable<Client> clients)
-            {
-                foreach (var client in clients)
-                {
-                    ClientShouldHaveData(client);
-                }
-            }
-
-            private void ClientShouldHaveData(Client client)
-            {
-                // todo: seems impossible to test client.active.
-                client.CacheVersion.Should().NotBe(0);
-                client.CreatedAt.Should().NotBe(DateTime.MinValue);
-                client.Currency.Should().NotBeBlank();
-                client.CurrencySymbol.Should().NotBeBlank();
-                // todo: seems impossible to test client.default_invoice_timeframe because it can be null.
-                // todo: seems impossible to test client.details because it can be null.
-                // todo: seems impossible to test client.highrise_id because it can be null.
-                client.Id.Should().NotBe(0);
-                // todo: seems impossible to test client.last_invoice_kind because it can be null.
-                client.Name.Should().NotBeBlank();
-                client.StatementKey.Should().NotBeBlank();
-                client.UpdatedAt.Should().NotBe(DateTime.MinValue);
-            }
+            // todo: seems impossible to test client.active.
+            client.CacheVersion.Should().NotBe(0);
+            client.CreatedAt.Should().NotBe(DateTime.MinValue);
+            client.Currency.Should().NotBeBlank();
+            client.CurrencySymbol.Should().NotBeBlank();
+            // todo: seems impossible to test client.default_invoice_timeframe because it can be null.
+            // todo: seems impossible to test client.details because it can be null.
+            // todo: seems impossible to test client.highrise_id because it can be null.
+            client.Id.Should().NotBe(0);
+            // todo: seems impossible to test client.last_invoice_kind because it can be null.
+            client.Name.Should().NotBeBlank();
+            client.StatementKey.Should().NotBeBlank();
+            client.UpdatedAt.Should().NotBe(DateTime.MinValue);
         }
     }
 }
