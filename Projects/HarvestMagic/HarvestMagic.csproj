@@ -35,6 +35,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\packages\Newtonsoft.Json.5.0.5\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="NullGuard">
       <HintPath>..\..\packages\NullGuard.Fody.0.6.1.0\Lib\portable-net4+sl4+wp7+win8+MonoAndroid16+MonoTouch40\NullGuard.dll</HintPath>
       <Private>False</Private>
@@ -49,8 +52,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="JsonModels\ClientJsonModel.cs" />
+    <Compile Include="Models\Client.cs" />
+    <Compile Include="Clients.cs" />
     <Compile Include="HarvestAccount.cs" />
-    <Compile Include="Harvest.cs" />
+    <Compile Include="BaseHarvestApi.cs" />
     <Compile Include="IFreezable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
