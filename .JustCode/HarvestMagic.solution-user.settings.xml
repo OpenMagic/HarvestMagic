@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<JustCodeSettings Version="0.0" Timestamp="d17027d3-d182-4ab8-ad81-ae08fd2fb321">
+  <IgnoredErrorsAndWarningsSettings xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <IgnoredErrorsAndWarnings Version="2">
+      <FilePath>
+        <FileRelativePath>Projects/CommonMagic/DataAnnotations/UriAttribute.cs</FileRelativePath>
+        <ProjectRelativePath>Projects/CommonMagic/CommonMagic.csproj</ProjectRelativePath>
+        <IgnoredElement>
+          <TextualIdentifier>10888196215385713918</TextualIdentifier>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <FileRelativePath>Projects/HarvestMagic.Tests/HarvestTests.cs</FileRelativePath>
+        <ProjectRelativePath>Projects/HarvestMagic.Tests/HarvestMagic.Tests.csproj</ProjectRelativePath>
+        <IgnoredElement>
+          <TextualIdentifier>9960137329372079895</TextualIdentifier>
+        </IgnoredElement>
+      </FilePath>
+    </IgnoredErrorsAndWarnings>
+  </IgnoredErrorsAndWarningsSettings>
+</JustCodeSettings>

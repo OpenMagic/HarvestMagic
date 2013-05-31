@@ -11,26 +11,26 @@ namespace CommonMagic.Tests.DataAnnotations
         public class IsValid
         {
             [TestMethod]
-            public void Should_BeTrue_When_value_IsValidUri()
+            public void ShouldBeTrueWhenValueIsValidUri()
             {
                 IsValid_For("http://example.com").Should().BeTrue();
             }
 
             [TestMethod]
-            public void Should_BeFalse_When_value_IsNotValidUri()
+            public void ShouldBeFalseWhenValueIsNotValidUri()
             {
                 IsValid_For("an invalid url").Should().BeFalse();
                 IsValid_For(2).Should().BeFalse();
             }
 
             [TestMethod]
-            public void Should_BeTrue_When_value_IsNull()
+            public void ShouldBeTrueWhenValueIsNull()
             {
                 IsValid_For(null).Should().BeTrue();
             }
 
             [TestMethod]
-            public void Should_BeTrue_When_value_IsWhitespace()
+            public void ShouldBeTrueWhenValueIsWhitespace()
             {
                 IsValid_For("").Should().BeTrue();
             }

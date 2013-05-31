@@ -1,4 +1,4 @@
-namespace Freezable
+namespace HarvestMagic
 {
     public interface IFreezable
     {

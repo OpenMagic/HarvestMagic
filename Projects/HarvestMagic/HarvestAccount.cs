@@ -1,5 +1,4 @@
 ﻿using CommonMagic.DataAnnotations;
-using Freezable;
 using System.ComponentModel.DataAnnotations;
 
 namespace HarvestMagic

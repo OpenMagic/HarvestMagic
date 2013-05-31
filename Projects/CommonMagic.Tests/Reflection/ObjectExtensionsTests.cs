@@ -1,8 +1,9 @@
-﻿using FluentAssertions;
+﻿using CommonMagic.Reflection;
+using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
-namespace CommonMagic.Reflection.Tests
+namespace CommonMagic.Tests.Reflection
 {
     public class ObjectExtensionsTests
     {
@@ -23,7 +24,7 @@ namespace CommonMagic.Reflection.Tests
             }
 
             [TestMethod]
-            public void ShouldThrow_ArgumentNullException_When_obj_IsNull()
+            public void ShouldThrowArgumentNullExceptionWhenObjIsNull()
             {
                 // Given
                 Exception obj = null;
@@ -37,7 +38,7 @@ namespace CommonMagic.Reflection.Tests
             }
 
             [TestMethod]
-            public void ShouldThrow_ArgumentNullException_When_property_IsNull()
+            public void ShouldThrowArgumentNullExceptionWhenPropertyIsNull()
             {
                 // Given
                 var obj = new Exception();

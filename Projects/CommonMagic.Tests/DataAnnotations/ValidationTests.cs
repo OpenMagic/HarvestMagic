@@ -12,7 +12,7 @@ namespace CommonMagic.Tests.DataAnnotations
         public class Validate
         {
             [TestMethod]
-            public void ShouldThrow_ArgumentNullException_When_value_IsNull()
+            public void ShouldThrowArgumentNullExceptionWhenValueIsNull()
             {
                 // When
                 Action action = () => Validation.Validate<object>(null);
@@ -23,7 +23,7 @@ namespace CommonMagic.Tests.DataAnnotations
             }
 
             [TestMethod]
-            public void ShouldThrow_ValidationException_When_value_IsNotValid()
+            public void ShouldThrowValidationExceptionWhenValueIsNotValid()
             {
                 // Given
                 var invalidObject = new TestClass();
@@ -36,7 +36,7 @@ namespace CommonMagic.Tests.DataAnnotations
             }
 
             [TestMethod]
-            public void Should_BeSameAs_value_When_value_IsValid()
+            public void ShouldBeSameAsValueWhenValueIsValid()
             {
                 // Given
                 var validObject = new TestClass() { Required = "required property" };

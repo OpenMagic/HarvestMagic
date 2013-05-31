@@ -12,7 +12,7 @@ namespace HarvestMagic.Tests
         public class Constructor
         {
             [TestMethod]
-            public void ShouldThrow_ArgumentNullException_When_account_IsNull()
+            public void ShouldThrowArgumentNullExceptionWhenAccountIsNull()
             {
                 // When
                 Action action = () => new Harvest(null);
@@ -23,7 +23,7 @@ namespace HarvestMagic.Tests
             }
 
             [TestMethod]
-            public void ShouldThrow_ValidationException_When_account_IsNotValid()
+            public void ShouldThrowValidationExceptionWhenAccountIsNotValid()
             {
                 // Given
                 var account = new HarvestAccount();
@@ -37,7 +37,7 @@ namespace HarvestMagic.Tests
             }
 
             [TestMethod]
-            public void Should_Freeze_account()
+            public void ShouldFreezeAccount()
             {
                 // Given
                 var account = new HarvestAccount() { Password = "fake", Uri = "http://fake.com", UserName = "fake" };

@@ -1,8 +1,9 @@
-﻿using FluentAssertions;
+﻿using CommonMagic.Reflection;
+using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
-namespace CommonMagic.Reflection.Tests
+namespace CommonMagic.Tests.Reflection
 {
     public class TypeTests
     {
@@ -20,7 +21,7 @@ namespace CommonMagic.Reflection.Tests
             }
 
             [TestMethod]
-            public void ShouldThrow_ArgumentNullException_When_value_IsNull()
+            public void ShouldThrowArgumentNullExceptionWhenValueIsNull()
             {
                 // When
                 Action action = () => Type<Exception>.Property<object>(null);
