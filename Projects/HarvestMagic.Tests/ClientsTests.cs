@@ -19,10 +19,9 @@ namespace HarvestMagic.Tests
             {
                 // Given
                 var account = Config.Instance.HarvestAccount;
-                var clients = new Clients(account);
 
                 // When
-                var result = clients.GetAll();
+                var result = account.Clients.GetAll();
 
                 // Then
                 result.Count().Should().BeGreaterThan(0);

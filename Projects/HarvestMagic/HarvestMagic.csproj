@@ -56,7 +56,7 @@
     <Compile Include="Models\Client.cs" />
     <Compile Include="Clients.cs" />
     <Compile Include="HarvestAccount.cs" />
-    <Compile Include="BaseHarvestApi.cs" />
+    <Compile Include="Core\BaseHarvestApi.cs" />
     <Compile Include="IFreezable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

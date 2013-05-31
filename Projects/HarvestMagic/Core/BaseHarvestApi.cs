@@ -1,12 +1,11 @@
-﻿using CommonMagic.DataAnnotations;
-using System.Net;
-using System;
-using System.Text;
+﻿using System;
 using System.IO;
+using System.Net;
+using System.Text;
+using CommonMagic.DataAnnotations;
 using Newtonsoft.Json;
-using System.Collections.Generic;
 
-namespace HarvestMagic
+namespace HarvestMagic.Core
 {
     public abstract class BaseHarvestApi
     {

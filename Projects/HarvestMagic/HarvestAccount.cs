@@ -27,6 +27,8 @@ namespace HarvestMagic
             Password = "";
         }
 
+        public Clients Clients { get { return new Clients(this); } }
+
         public void Freeze()
         {
             isFrozen = true;

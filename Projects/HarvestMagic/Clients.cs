@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
+using HarvestMagic.Core;
 using HarvestMagic.JsonModels;
 using HarvestMagic.Models;
-using System.Linq;
 
 namespace HarvestMagic
 {
