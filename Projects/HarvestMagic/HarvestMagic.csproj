@@ -56,7 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Core\PascalCasePropertyNamesContractResolver.cs" />
-    <Compile Include="JsonModels\ClientJsonModel.cs" />
+    <Compile Include="Core\JsonModels\ClientJsonModel.cs" />
     <Compile Include="Client.cs" />
     <Compile Include="Clients.cs" />
     <Compile Include="HarvestAccount.cs" />

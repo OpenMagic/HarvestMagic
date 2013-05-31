@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using HarvestMagic.Core;
-using HarvestMagic.JsonModels;
+using HarvestMagic.Core.JsonModels;
 
 namespace HarvestMagic
 {
@@ -17,14 +17,14 @@ namespace HarvestMagic
             var jsonClients = Deserialize<ClientJsonModel[]>("/clients");
 
             return from c in jsonClients
-                   select c.client;
+                   select c.Client;
         }
 
         public Client GetById(int clientId)
         {
             var jsonClient = Deserialize<ClientJsonModel>("/clients/" + clientId);
 
-            return jsonClient.client;
+            return jsonClient.Client;
         }
     }
 }
