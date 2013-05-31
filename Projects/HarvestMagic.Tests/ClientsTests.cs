@@ -24,6 +24,20 @@ namespace HarvestMagic.Tests
             ClientsShouldHaveData(result);
         }
         
+        [TestMethod]
+        public void GetById_ShouldReturnClientWithData()
+        {
+            // Given
+            var account = Config.Instance.HarvestAccount;
+            var clients = account.Clients.GetAll();
+            var clientId = clients.First().Id;
+
+            // When
+            var client = account.Clients.GetById(clientId);
+
+            // Then
+            ClientShouldHaveData(client);
+        }
         protected void ClientsShouldHaveData(IEnumerable<Client> clients)
         {
             foreach (var client in clients)
