@@ -42,18 +42,18 @@ namespace HarvestMagic.Tests
             private void ClientShouldHaveData(Client client)
             {
                 // todo: seems impossible to test client.active.
-                client.cache_version.Should().NotBe(0);
-                client.created_at.Should().NotBe(DateTime.MinValue);
-                client.currency.Should().NotBeBlank();
-                client.currency_symbol.Should().NotBeBlank();
+                client.CacheVersion.Should().NotBe(0);
+                client.CreatedAt.Should().NotBe(DateTime.MinValue);
+                client.Currency.Should().NotBeBlank();
+                client.CurrencySymbol.Should().NotBeBlank();
                 // todo: seems impossible to test client.default_invoice_timeframe because it can be null.
                 // todo: seems impossible to test client.details because it can be null.
                 // todo: seems impossible to test client.highrise_id because it can be null.
-                client.id.Should().NotBe(0);
+                client.Id.Should().NotBe(0);
                 // todo: seems impossible to test client.last_invoice_kind because it can be null.
-                client.name.Should().NotBeBlank();
-                client.statement_key.Should().NotBeBlank();
-                client.updated_at.Should().NotBe(DateTime.MinValue);
+                client.Name.Should().NotBeBlank();
+                client.StatementKey.Should().NotBeBlank();
+                client.UpdatedAt.Should().NotBe(DateTime.MinValue);
             }
         }
     }

@@ -31,7 +31,8 @@ namespace HarvestMagic.Core
         protected T Deserialize<T>(string pathAndQueryString)
         {
             var json = GetJsonString(pathAndQueryString);
-            var result = JsonConvert.DeserializeObject<T>(json);
+            var settings = new JsonSerializerSettings() { ContractResolver = new PascalCasePropertyNamesContractResolver() };
+            var result = JsonConvert.DeserializeObject<T>(json, settings);
 
             return result;
         }
