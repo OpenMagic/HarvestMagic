@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using FluentAssertions;
-using HarvestMagic.Models;
 using HarvestMagic.Tests.TestConfiguration;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 

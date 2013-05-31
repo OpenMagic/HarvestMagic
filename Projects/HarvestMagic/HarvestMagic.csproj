@@ -53,7 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="JsonModels\ClientJsonModel.cs" />
-    <Compile Include="Models\Client.cs" />
+    <Compile Include="Client.cs" />
     <Compile Include="Clients.cs" />
     <Compile Include="HarvestAccount.cs" />
     <Compile Include="Core\BaseHarvestApi.cs" />

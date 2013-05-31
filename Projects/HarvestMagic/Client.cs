@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using Newtonsoft.Json;
 using NullGuard;
 
-namespace HarvestMagic.Models
+namespace HarvestMagic
 {
     [NullGuard(ValidationFlags.Methods)]
     public class Client
