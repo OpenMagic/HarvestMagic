@@ -4,12 +4,12 @@ namespace HarvestMagic
 {
     public class Harvest
     {
-        private readonly HarvestAccount account;
+        private readonly HarvestAccount _Account;
 
         public Harvest(HarvestAccount account)
         {
-            this.account = account.Validate();
-            this.account.Freeze();
+            _Account = account.Validate();
+            _Account.Freeze();
         }
     }
 }

@@ -16,6 +16,20 @@
           <TextualIdentifier>9960137329372079895</TextualIdentifier>
         </IgnoredElement>
       </FilePath>
+      <FilePath>
+        <FileRelativePath>Projects/HarvestMagic/HarvestAccount.cs</FileRelativePath>
+        <ProjectRelativePath>Projects/HarvestMagic/HarvestMagic.csproj</ProjectRelativePath>
+        <IgnoredElement>
+          <TextualIdentifier>16515660808336285943</TextualIdentifier>
+        </IgnoredElement>
+      </FilePath>
+      <FilePath>
+        <FileRelativePath>Projects/HarvestMagic.Tests/TestConfiguration/Config.cs</FileRelativePath>
+        <ProjectRelativePath>Projects/HarvestMagic.Tests/HarvestMagic.Tests.csproj</ProjectRelativePath>
+        <IgnoredElement>
+          <TextualIdentifier>10863320810806132552</TextualIdentifier>
+        </IgnoredElement>
+      </FilePath>
     </IgnoredErrorsAndWarnings>
   </IgnoredErrorsAndWarningsSettings>
 </JustCodeSettings>
