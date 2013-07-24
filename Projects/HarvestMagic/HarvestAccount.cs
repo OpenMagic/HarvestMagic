@@ -1,5 +1,5 @@
-﻿using CommonMagic.DataAnnotations;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
+using OpenMagic.DataAnnotations;
 
 namespace HarvestMagic
 {

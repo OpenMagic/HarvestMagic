@@ -35,6 +35,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Common.Logging">
+      <HintPath>..\..\packages\Common.Logging.2.1.2\lib\net40\Common.Logging.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\..\packages\Newtonsoft.Json.5.0.5\lib\net40\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -44,6 +47,9 @@
     <Reference Include="NullGuard">
       <HintPath>..\..\packages\NullGuard.Fody.0.6.1.0\Lib\portable-net4+sl4+wp7+win8+MonoAndroid16+MonoTouch40\NullGuard.dll</HintPath>
       <Private>False</Private>
+    </Reference>
+    <Reference Include="OpenMagic">
+      <HintPath>..\..\packages\OpenMagic.0.1.19.0\lib\net40\OpenMagic.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -63,12 +69,6 @@
     <Compile Include="Core\BaseHarvestApi.cs" />
     <Compile Include="IFreezable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\CommonMagic\CommonMagic.csproj">
-      <Project>{E81DAA76-9094-483A-877C-4B44F30C35F5}</Project>
-      <Name>CommonMagic</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="FodyWeavers.xml" />

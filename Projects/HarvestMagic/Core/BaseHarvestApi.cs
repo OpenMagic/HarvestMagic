@@ -2,8 +2,8 @@
 using System.IO;
 using System.Net;
 using System.Text;
-using CommonMagic.DataAnnotations;
 using Newtonsoft.Json;
+using OpenMagic.DataAnnotations;
 
 namespace HarvestMagic.Core
 {

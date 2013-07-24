@@ -1,8 +1,8 @@
-﻿using CommonMagic.DataAnnotations;
-using CommonMagic.Reflection;
+﻿using System.Reflection;
 using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Reflection;
+using OpenMagic.DataAnnotations;
+using OpenMagic.Reflection;
 
 namespace HarvestMagic.Tests
 {
